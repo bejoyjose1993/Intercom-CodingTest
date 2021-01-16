@@ -16,3 +16,10 @@ The project requires the following in order to run the project
 * Calculating gegographical distance and finding the customer nearby the Intercom office Using Great Circle Distance Formula
 (https://en.wikipedia.org/wiki/Great-circle_distance).
 * Generating invitation list in an output text file.
+
+# Code Run Guide
+###STEP 1] Check weather Java and Maven have been setup sucessfully using following commands.
+`<addr>`
+
+# Author
+BEJOY JOSE
