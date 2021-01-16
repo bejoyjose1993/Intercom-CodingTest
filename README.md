@@ -19,7 +19,13 @@ The project requires the following in order to run the project
 
 # Code Run Guide
 ###STEP 1] Check weather Java and Maven have been setup sucessfully using following commands.
-`<addr>`
+```
+java -version
+```
+```
+mvn -version
+```
+###STEP 1] Check weather Java and Maven have been setup sucessfully using following commands.
 
 # Author
 BEJOY JOSE
