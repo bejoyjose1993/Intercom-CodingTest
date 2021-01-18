@@ -32,8 +32,8 @@ Git Guide: - https://documentation.alphasoftware.com/documentation/pages/HowTo/O
 ```
 mvn clean install
 ```
-* The above command will download all the dependendencies and required plugins. 
-* It will also run all the Unit Test codes. The output of the above command is listed below.
+* Using this command Maven will automatically download the required dependencies and plugins. It also creates a target directory and build an executable jar file in created target directory. 
+* Maven also parallelly runs the JUnit Tests. The output of the above command is listed below.
 ```
 ....
 
@@ -118,11 +118,19 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
 [INFO] Finished at: 2021-01-18T02:50:35Z
 [INFO] ------------------------------------------------------------------------
 ```
- Using this command Maven will automatically download the required dependencies, and build an executable jar file in the same root location.
  
- ###STEP 3] Use command line to navigate to the new target folder and execute the project using following command.
+ ###STEP 3] Now use command line to navigate to the new target folder and execute the project using following command. Execution can be performed using below command from target directory.
  ```
-java -jar target/intercomest.jar
+ java -jar IntercomeAssessement-1.0.jar
 ```
+Output:- Customer's output invitation list will be generated in the project root directory and the same will be output in command line.
+
+```
+List of customers in range:
+[user_id=4, name=Ian Kehoe, user_id=5, name=Nora Dempsey, user_id=6, name=Theresa Enright, user_id=8, name=Eoin Ahearn, user_id=11, name=Richard Finnegan, user_id=12, name=Christina McArdle, user_id=13, name=Olive Ahearn, user_id=15, name=Michael Ahearn, user_id=17, name=Patricia Cahill, user_id=23, name=Eoin Gallagher, user_id=24, name=Rose Enright, user_id=26, name=Stephen McArdle, user_id=29, name=Oliver Ahearn, user_id=30, name=Nick Enright, user_id=31, name=Alan Behan, user_id=39, name=Lisa Ahearn]
+```
+
+
+
 # Author
 BEJOY JOSE
