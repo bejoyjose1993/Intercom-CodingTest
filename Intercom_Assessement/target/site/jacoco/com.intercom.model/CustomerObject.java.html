@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomerObject.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">IntercomeAssessement</a> &gt; <a href="index.source.html" class="el_package">com.intercom.model</a> &gt; <span class="el_source">CustomerObject.java</span></div><h1>CustomerObject.java</h1><pre class="source lang-java linenums">package com.intercom.model;
+
+public class CustomerObject implements Comparable{
+	private Float latitude;
+	private int user_id;
+	private String userName;
+	private Float longitude;
+	
+	
+<span class="fc" id="L10">	public CustomerObject(){}</span>
+	
+<span class="fc" id="L12">	public CustomerObject(int user_id, String userName, Float latitude, Float longitude) {</span>
+<span class="fc" id="L13">		this.user_id = user_id;</span>
+<span class="fc" id="L14">		this.userName = userName;</span>
+<span class="fc" id="L15">		this.latitude = latitude;</span>
+<span class="fc" id="L16">		this.longitude= longitude;</span>
+		
+<span class="fc" id="L18">	}</span>
+	public Float getLatitude() {
+<span class="fc" id="L20">		return latitude;</span>
+	}
+	public void setLatitude(Float latitude) {
+<span class="fc" id="L23">		this.latitude = latitude;</span>
+<span class="fc" id="L24">	}</span>
+	public int getUser_id() {
+<span class="fc" id="L26">		return user_id;</span>
+	}
+	public void setUser_id(int user_id) {
+<span class="fc" id="L29">		this.user_id = user_id;</span>
+<span class="fc" id="L30">	}</span>
+	public String getName() {
+<span class="fc" id="L32">		return userName;</span>
+	}
+	public void setName(String name) {
+<span class="fc" id="L35">		this.userName = name;</span>
+<span class="fc" id="L36">	}</span>
+	public Float getLongitude() {
+<span class="fc" id="L38">		return longitude;</span>
+	}
+	public void setLongitude(Float longitude) {
+<span class="fc" id="L41">		this.longitude = longitude;</span>
+<span class="fc" id="L42">	}</span>
+	@Override
+    public String toString() {
+<span class="fc" id="L45">        return &quot;user_id=&quot; + user_id + &quot;, name=&quot; + userName;</span>
+    }
+	
+	public int compareTo(Object customer_obj) {
+<span class="fc" id="L49">		int compare_user_Id=((CustomerObject)customer_obj).getUser_id();</span>
+		// TODO Auto-generated method stub
+<span class="fc" id="L51">		return this.user_id-compare_user_Id;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
