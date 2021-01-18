@@ -32,7 +32,8 @@ Git Guide: - https://documentation.alphasoftware.com/documentation/pages/HowTo/O
 ```
 mvn clean install
 ```
-
+* The above command will download all the dependendencies and required plugins. 
+* It will also run all the Unit Test codes. The output of the above command is listed below.
 ```
 ....
 
